@@ -1,0 +1,66 @@
+[
+    {
+        "id": 153,
+        "rutaImg": "http://www.ikea.com/ae/en/images/products/micke-desk-white__0378419_PE555720_S4.JPG",
+        "status": null,
+        "tipo": "MOBILIARIO",
+        "categoria": "Mesa comedor",
+        "subcategoria": "2 comensales"
+    },
+    {
+        "id": 154,
+        "rutaImg": "http://www.ikea.com/ae/en/images/products/micke-desk-white__0378419_PE555720_S4.JPG",
+        "status": false,
+        "tipo": "MOBILIARIO",
+        "categoria": "Mesa comedor",
+        "subcategoria": "2 comensales"
+    },
+    {
+        "id": 155,
+        "rutaImg": "http://www.ikea.com/cz/cs/images/products/brimnes-komoda-se-zasuvkami-bila__0140500_PE300515_S4.JPG",
+        "status": null,
+        "tipo": "DECORACIÓN",
+        "categoria": "Arte mural",
+        "subcategoria": "Adhesivos"
+    },
+    {
+        "id": 156,
+        "rutaImg": "http://www.ikea.com/cz/cs/images/products/brimnes-komoda-se-zasuvkami-bila__0140500_PE300515_S4.JPG",
+        "status": null,
+        "tipo": "DECORACIÓN",
+        "categoria": "Arte mural",
+        "subcategoria": "Adhesivos"
+    },
+    {
+        "id": 157,
+        "rutaImg": "http://www.ikea.com/ae/en/images/products/trysil-wardrobe-w-sliding-doors-drawers-white__0452604_PE601521_S4.JPG",
+        "status": true,
+        "tipo": "TEXTIL",
+        "categoria": "Textiles baño",
+        "subcategoria": "Albornoz colgado en un punto"
+    },
+    {
+        "id": 158,
+        "rutaImg": "http://www.ikea.com/ae/en/images/products/trysil-wardrobe-w-sliding-doors-drawers-white__0452604_PE601521_S4.JPG",
+        "status": null,
+        "tipo": "TEXTIL",
+        "categoria": "Textiles baño",
+        "subcategoria": "Albornoz colgado en un punto"
+    },
+    {
+        "id": 159,
+        "rutaImg": "http://www.ikea.com/ae/en/images/products/trysil-wardrobe-w-sliding-doors-drawers-white__0452604_PE601521_S4.JPG",
+        "status": true,
+        "tipo": "MOBILIARIO",
+        "categoria": "Estantes de pared",
+        "subcategoria": "Balda"
+    },
+    {
+        "id": 160,
+        "rutaImg": "http://www.ikea.com/jo/en/images/products/malm-bed-frame-high__0240114_PE379802_S4.JPG",
+        "status": false,
+        "tipo": "MOBILIARIO",
+        "categoria": "Camas",
+        "subcategoria": "Cama con patas, cabezal y pies"
+    }
+]

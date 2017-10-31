@@ -1,0 +1,14 @@
+{
+    "id": 153,
+    "rutaImg": "http://www.ikea.com/ae/en/images/products/micke-desk-white__0378419_PE555720_S4.JPG",
+    "status": "Pending",
+    "mesh": "12",
+    "materials": [
+        "Blanco"
+    ],
+    "submeshes": [],
+    "pivots": {
+        "value": "",
+        "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+}
