@@ -1,6 +1,7 @@
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
+from sklearn import preprocessing
 
 np.set_printoptions(precision=6)
 
@@ -52,9 +53,11 @@ class GaussianNB(object):
         pass
 
     def fit(self, X, y):
+        print(X)
+        for i in X:
+            print(i[0])
         separated = [[x for x, t in zip(X, y) if t == c] for c in np.unique(y)]
-        self.model = np.array([np.c_[np.mean(i, axis=0), np.std(i, axis=0)]
-                    for i in separated])
+        # self.model = np.array([np.c_[np.mean(i, axis=0), np.std(i, axis=0)] for i in separated])
         return self
 
     def _prob(self, x, mean, std):
@@ -72,12 +75,41 @@ class GaussianNB(object):
         return sum(self.predict(X) == y) / len(y)
 
 def main():
-    iris = load_iris()
-    X, y = iris.data, iris.target
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25)
+    # iris = load_iris()
+    # X, y = iris.data, iris.target
+    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.25)
+    # nb = GaussianNB().fit(X_train, y_train)
+    # print("Gaussian Score Train: ", nb.score(X_train, y_train))
+    # print("Gaussian Score Test: ", nb.score(X_test, y_test)
+
+    #X = [[121, 80, 44], [180, 70, 43], [166, 60, 38], [153, 54, 37], [166, 65, 40], [190, 90, 47], [175, 64, 39],
+         # [174, 71, 40], [159, 52, 37], [171, 76, 42], [183, 85, 43]]
+
+    X = [[[121,133], 80, 44],
+         [[180,140], 70, 43],
+         [[166,180], 60, 38],
+         [[153,170], 54, 37],
+         [[166,160], 65, 40],
+         [[190,180], 90, 47],
+         [[175,170], 64, 39],
+         [[174,173], 71, 40],
+         [[159,160], 52, 37],
+         [[171,150], 76, 42],
+         [[183,133], 85, 43]
+         ]
+
+    Y = ['blanco', 'blanco', 'mediterraneo', 'mediterraneo', 'blanco', 'blanco', 'mediterraneo', 'mediterraneo',
+         'mediterraneo', 'blanco', 'blanco']
+
+    le = preprocessing.LabelEncoder()
+    #le.fit(['blanco', 'mediterraneo'])
+    le.fit(Y)
+    labels = le.transform(Y)
+    X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=.25)
     nb = GaussianNB().fit(X_train, y_train)
-    print("Gaussian Score Train: ", nb.score(X_train, y_train))
-    print("Gaussian Score Test: ", nb.score(X_test, y_test))
+
+    predict = nb.predict([[141, 78, 50]])
+    print(le.inverse_transform(predict))
 
 
 main()
