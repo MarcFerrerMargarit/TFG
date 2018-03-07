@@ -1,8 +1,0 @@
-\select@language {catalan}
-\select@language {english}
-\contentsline {chapter}{Introduction}{ii}
-\contentsline {chapter}{\numberline {1}titol abreujat 1}{1}
-\contentsline {section}{\numberline {1.1}Sub apartat del cap\'{\i }tol}{1}
-\contentsline {chapter}{\numberline {2}t\'{\i }tol del cap\'{\i }tol 2}{3}
-\select@language {english}
-\contentsline {chapter}{Bibliography}{5}

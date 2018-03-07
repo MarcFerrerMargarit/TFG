@@ -66,20 +66,20 @@
 \vspace*{1.5cm}
 \rule{16cm}{0.1mm}\\
 \begin{Huge}
-\textbf{AQUI EL T\'ITOL DEL TREBALL} \\
+\textbf{MACHINE LEARNING APLICAT A  LA GENERACIÓ DE MOODBOARDS} \\
 \end{Huge}
 \rule{16cm}{0.1mm}\\
 
 \vspace{1cm}
 
 \begin{flushright}
-\textbf{\LARGE Autor: el vostre nom}
+\textbf{\LARGE Autor: Ferrer Margarit, Marc}
 
 \vspace*{2cm}
 
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{ll}
-\textbf{\Large Director:} & \textbf{\Large Dr. Nom tutor } \\
+\textbf{\Large Director:} & \textbf{\Large David Buchaca } \\
 \textbf{\Large Realitzat a:} & \textbf{\Large  Departament....   } \\
  & \textbf{\Large (nom del departament)} \\
 \\
@@ -107,13 +107,12 @@
 
 \section*{Abstract}
 
-Goldbach's weak conjecture asserts that every odd integer greater than 5 is the sum of three primes. We study that problem and the proof of it presented by H. A. Helfgott and D. Platt. We focus on the circle method. Finally, we describe a computation that confirms Goldbach's weak conjecture up to $10^{28}$.
+Moodboards are currently used to represent objects that are formed by the composition of others and seek to obtain a cohesive result among them and generate a new image.
+Machine learning allows us to train a machine so that it is capable of generating the values ??with the data that we have entered previously. The combination of the two elements allows the generation of new images, with totally correct and cohesive objects and different from the images used to train the machine.
 
 \section*{Resum}
-La conjectura feble de Goldbach afirma que tot nombre enter imparell major que 5 és la suma de tres nombres primers. En aquest treball estudiem aquest problema i la seva prova presentada per HA Helfgott i D. Platt. Ens centrem en el mètode del cercle. Finalment, describim un càlcul que confirma la conjectura feble de Goldbach fins a $10^{28}$.
-
-
-
+Actualment els moodboards s'utilitzen per representar objectes que estan formats per la composició d'altres i preten obtenir un resultat de cohesió entre ells i generar una imatge nova.
+El machine learning ens permet entrenar una màquina per tal de que aquesta sigui capaça de generar els valors amb les dades que li hem entrat prèviament. La combinaicó dels dos elements permet la generació de noves imatges, amb objectes totalment correctes i cohesionats i diferents a les imatges utilitzades per entrenar la màquina.
 \newpage 
 
 
@@ -131,37 +130,45 @@ Vull agrair a ...
 \section{Introducció}
 \subsection*{El projecte}
 
-La conjectura forta de Goldbach assegura que tot nombre enter parell més gran que 2 pot ser escrit com a suma de dos nombres primers. És fàcil veure que aquesta conjectura implica l'anomenada conjectura feble de Goldbach: tot nombre enter senar més gran que 5 pot ser escrit com a suma d'exactament tres nombres primers.
 
-En aquest treball comentarem l'origen d'aquests problemes, exposarem una cro\-no\-lo\-gia parcial del seu tractament, amb alguns dels resultats més coneguts, i n'enunciarem algunes conseqüències.
-
-Posarem de manifest les idees bàsiques i les tècniques utilitzades en l'estudi de la conjectura feble de Goldbach, centrant-nos en les de la demostració presentada recentment per H. A. Helfgott en col$\cdot$laboració amb D. Platt, prestant especial atenció al mètode del cercle de Hardy-Littlewood.
-
-Una part força extensa de la tasca realitzada consisteix en una verificació parcial de la conjectura feble de Goldbach fins a $10^{28}$, que requereix del càlcul d'uns dos mil cinc-cents milions de nombres primers certificats. Veurem com portar a la pràctica tals càlculs i guardar les dades generades utilitzant els recursos informàtics de què disposem.
-
-
-
-
-
-
-
+L'objectiu del projecte és la generació automàtica de moodboards utilitzant técniques de machine learning per tal de crear una màquina capaç de generar correctament aquestes imatges. El projecte es divideix en dos parts essencials, una la generació de moodboards, mitjançant eines ja creades i la segona la creació d'una màquina capaç de llegir els moodboards creats anteriorment, aprendre com estan formats i de quina forma i generar-ne de nous. \\\\
+Un moodboard és una combinació d'imatges relacionades entre elles que juntes formen una sola imatge. Normalment és creen aquestes combinacions per generar imatges de paisatges, d'aplicacions, decoració i creació d'habitacions. En aquest cas els moodboards que utilitzarem serán representacions d'estàncies d'una casa, dormitori, bany... Seran una combinació de diferents mobles i objectes que junts representarán una estància amb un estil concret, és a dir, cada imatge generada tindrà un nom que serà l'estil d'aquesta imatge, l'estil que té l'estància si fos real.\\\\
+El machine learning ens ha de permetre donada una sèria de imatges generades correctament importar-les a la màquina i que aquesta aprengui com estan formades i sigui capaç de generar-ne de noves i que siguin correctes. L'objectiu de tot aquest procés és automatitzar la generació d'imatges i d'aquesta manera estalviar molt de temps ja que la generació d'una imatge d'aquestes pot tardar molt de temps degut a la complicada feina de relacionar i triar correctament les imatges. Així doncs el que es vol evaluar és l'optimització de generació de imatges, moodboards, correctes utilitzant una màquina intel·ligent que anirà aprenent cada cop més.
+ 
 \subsection*{Estructura de la Memòria}
-
+En primer lloc explicarem com es generen les imatges originals per el entrenament de la màquina, quines eines s'utilitzen per tal de crearles. \\
+Després analitzarem com són les dades d'entrada, com obtenim les dades que necessitem de les imatges i com les convertim per tal que la màquina les pugui llegir. També analitzarem les dades de sortida, com han de ser per tal de que després les poguem convertir a una imatge. \\
+Seguidament explicarem l'algorisme que s'aplica per a la màquina i el seu funcionament al llarg del temps. I finalment s'explicarà com són les dades de sortida de la màquinai els resultats obtinguts, si les imatges que es generen són correctes, la precisió de la màquina...
 \newpage
 
-\section{Capítol 2}
+\section{Generació de Moodboards}
 
-\subsection{Subapartat 2.1}
+\subsection{Moodboards}
+\subsection{Eines}
+\subsection{Exemples}
 
-\newpage
+\section{Dades}
+
+\subsection{Dades d'entrada}
+\[[ x^1_1, x^1_2, x^1_3, ..., x_{48}^1 ][y^1]\]
+\[[ x^2_1, x^2_2, x^2_3, ..., x_{48}^2 ][y^2]\]
+\[.\]
+\[.\]
+\[.\]
+\[[ x^M_1, x^M_2, x^M_3, ..., x_{48}^M ][y^M]\]
+
+On ~$M$ es el nombre total de graelles etiquetades, ~$y^M$ és la etiqueta de la graella ~$M$, ~$x^M$ és la graella ~$M$, ~$x_i^M$ és el i-essim objecte de la graella on $i \in [1,2,...,48]$ i ~$x_i^M$ és en realitat un vector amb 4 valors:
+\[x_i^M = (x_i^M["id"], x_i^M["type"], x_i^M["cat"],x_i^M["subcat"])\]
+\subsection{Dades de sortida}
+
+\section{Machine Learning}
+
+\subsection{Introducció}
+\subsection{Algoritme}
+
+\section{Resultats}
 
 \section{Conclusions}
-
-Fent servir un símil geomètrico-cartogràfic, aquesta memòria constitueix un mapa a escala planetària de la demostració de la conjectura feble de Goldbach presentada per Helfgott i un mapa a escala continental de la verificació numèrica d'aquesta. Estudis posteriors i més profunds haurien de permetre elaborar mapes de menor escala.
-
-La naturalesa dels nombres primers ens ha portat per molts racons diferents de les Matemàtiques; en no imposar-nos restriccions en la forma de pensar, hem pogut gaudir del viatge i assolir els objectius que ens vam plantejar a l'inici del projecte i anar més enllà, sobretot en el camp de la computació i la manipulació de grans volums de dades numèriques.
-
-Una gran part dels coneixements bàsics que hem hagut de fer servir han estat treballats en les assignatures de Mètodes analítics en teoria de nombres i d'Anàlisi harmònica i teoria del senyal, que són optatives de quart curs del Grau de Ma\-te\-mà\-ti\-ques. Altres els hem hagut d'aprendre durant el desenvolupant del projecte. S'ha realitzat una tasca de recerca bibliogràfica important, consultant recursos antics i moderns, tant en format digital com en format paper.
 
 \normalfont
 
